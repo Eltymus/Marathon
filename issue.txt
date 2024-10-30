@@ -1,0 +1,15 @@
+Creare una lista dei partecipanti ad una maratona
+i partecipanti hanno come dato : 
+-id 
+-nome
+-cognome 
+-email (mettere il unique alla cartella database)
+prevenire il default del form quando inserisci nuovo utente
+
+partire da backend e database (database reale )
+quindi query come primo passo 
+inserire i primi 3 valori e utenti
+una volta che la persona si è iscritta gli manda una mail o gli manda un messaggio di conferma
+
+
+fase 1 installare sqlalchemy

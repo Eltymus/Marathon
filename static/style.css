@@ -1,0 +1,39 @@
+body{
+    background-color: ghostwhite;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav{
+    background: rebeccapurple;
+    color: ghostwhite;
+    display: flex;
+    padding: .5rem 0 0.5rem 0;
+}
+
+main{
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 16px;
+}
+
+.logo{
+    margin-right: auto;
+}
+
+.logo a, .link a{
+    text-decoration: none;  
+    font-size: 1.2rem;    
+    font-weight: 700;      
+    color: #fff;
+    padding: 8px 16px;
+}
+
+footer{
+    text-align: center;
+    background-color: rebeccapurple;
+    color: ghostwhite;
+    padding: 1rem 0 0.5rem 0;
+}
