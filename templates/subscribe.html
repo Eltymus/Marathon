@@ -1,10 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
 
+<div class="p-3 mb-2 bg-white text-dark rounded-3 border border-5 border-black "  style="box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.847);">
+
+    <div class="d-flex justify-content-center">
+
 <h1>Iscriviti</h1>
 
-
-<form action="{{ url_for('subscribeform')}}"  method="post">
+<form action="{{ url_for('subscribe')}}"  method="post">
 
     <label for="nome">Nome</label>
     <input type="text" name="nome" id="nome">
@@ -19,5 +22,8 @@
 
 </form>
 
+</div>
+
+</div>
 
 {% endblock %}

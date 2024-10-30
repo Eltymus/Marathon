@@ -2,6 +2,7 @@ from flask import Flask, render_template, flash, request, redirect, url_for
 from sqlalchemy import create_engine,text
 
 app = Flask(__name__)
+app.secret_key = "key"
 
 URLpath = "mysql+pymysql://root@127.0.0.2/Marathon"
 
@@ -31,10 +32,9 @@ def partecipants():
 def subscribe(): 
     if request.method == 'POST':
         try:
-            nome=request.POST.get["nome"]
-            cognome=request.POST.get["cognome"]
-            email=request.POST.get["email"]
-            
+            nome = request.form.get("nome")
+            cognome = request.form.get("cognome")
+            email = request.form.get("email")       
             with engine.connect() as conn :
                 sqlInsert = text("""
                                 INSERT INTO partecipants (nome, cognome, email) 
@@ -46,7 +46,6 @@ def subscribe():
                     "email":email
                     })
                 conn.commit()
-            
             flash("Iscrizione completata con successo!")
             return redirect(url_for("partecipants"))
         except Exception as e:

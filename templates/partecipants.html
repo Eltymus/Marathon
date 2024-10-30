@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1>Partecipanti</h1>
+    
+<h1 class="d-flex justify-content-center p-4 mb-3 bg-white text-dark border border-dark border-5 rounded-3 mw-100" style="box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.847);">Partecipanti</h1>
 
-<ul>
-    {% for id ,  nome , cognome, mail in partecipants %}
-        <li>{{ nome }} {{cognome}} <br> {{ mail }}</li>
+<ul class="d-flex justify-content-center ">
+    {% for id ,  nome , cognome, email in partecipants %}
+        <li class="border border-dark border-5 rounded-pill mw-30">{{ nome }} {{cognome}} <br> {{ email }}</li>
     {% endfor %}
 </ul>
 

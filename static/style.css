@@ -1,15 +1,17 @@
 body{
-    background-color: ghostwhite;
+    background-color: rgb(102, 109, 249)!important;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 nav{
-    background: rebeccapurple;
-    color: ghostwhite;
+    background:linear-gradient(225deg, transparent 0, transparent 85px, #ecfb81 0, #e1e517 100%);
+    color: rgb(250, 11, 11);
     display: flex;
     padding: .5rem 0 0.5rem 0;
+    border-bottom: solid 4px black;
+
 }
 
 main{
@@ -17,28 +19,46 @@ main{
     max-width: 1200px;
     margin: 0 auto;
     padding: 3rem 16px;
+    background-color: rgb(102, 109, 249);
 }
 
 .logo{
     margin-right: auto;
+    color: #000000;
 }
 
 .logo a, .link a{
     text-decoration: none;  
     font-size: 1.2rem;    
     font-weight: 700;      
-    color: #fff;
+    color: #000000;
     padding: 8px 16px;
 }
 
 footer{
     text-align: center;
-    background-color: rebeccapurple;
-    color: ghostwhite;
+    background:rgb(240, 255, 104);
+    color: rgb(0, 0, 0);
     padding: 1rem 0 0.5rem 0;
+    border-top: solid 4px black;
+
 }
 
 li{
-    padding: 5px;
-    list-style-image: url('./img/runnermini.png')
+    padding: 7px;
+    list-style-image: url('./img/icons8-track-and-field-48.png');
+    text-align: center;
+    list-style-position: inside;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.847);
+    
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    
 }
