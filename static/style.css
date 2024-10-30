@@ -37,3 +37,8 @@ footer{
     color: ghostwhite;
     padding: 1rem 0 0.5rem 0;
 }
+
+li{
+    padding: 5px;
+    list-style-image: url('./img/runnermini.png')
+}

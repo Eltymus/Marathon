@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Partecipanti</h1>
+
+<ul>
+    {% for id ,  nome , cognome, mail in partecipants %}
+        <li>{{ nome }} {{cognome}} <br> {{ mail }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
